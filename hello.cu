@@ -1,7 +1,7 @@
 #include <cuda_runtime.h>
 #include <iostream>
 
-static __global__ void kernel(void)
+__global__ void kernel(void)
 {
 
 }

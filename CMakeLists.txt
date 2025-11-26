@@ -14,7 +14,8 @@ set(CMAKE_CUDA_STANDARD_REQUIRED ON)
 find_package(CUDA REQUIRED)
 
 # 添加可执行文件
-add_executable(run_all run_all.cu hello.cu utils.h)
+file(GLOB SOURCES "*.cu")
+add_executable(run_all utils.h mylib.h ${SOURCES})
 
 # 设置 CUDA 架构（根据你的 GPU 调整）
 set_target_properties(run_all PROPERTIES
