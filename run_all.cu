@@ -16,4 +16,14 @@ int main() {
     sample_vector_adds();
     printf("==========================\n");
 
+    printf("Running gen_julia_set function:\n");
+    gen_julia_set();
+    printf("==========================\n");
+
+    printf("Running sample_vector_dot function:\n");
+    sample_vector_dot();
+    printf("==========================\n");
+
+
+    return 0;
 }
